@@ -1,0 +1,700 @@
+
+/*
+ Name:         Hibiscus Moon - Style Guide
+ Author:       Corey Winter
+ Author URI:   https://www.coreymwinter.com
+ Version:      1.0
+*/
+
+
+
+
+/* ------------------
+  MISC
+------------------ */
+.responsive-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+}
+
+.responsive-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.row.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+img.imagecircle {
+  border-radius: 50%;
+}
+
+
+
+/* --------------------
+  TYPOGRAPHY
+-------------------- */
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000000; 
+    letter-spacing: 1px; 
+    font-weight: normal; 
+    -webkit-font-smoothing:antialiased; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+h1, .h1 {
+    font-size: 60px; 
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+h2, .h2 {
+    font-size: 48px; 
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h3, .h3 {
+    font-size: 28px; 
+    font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: 24px; 
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    color: #2D3844;
+}
+
+h5, .h5 {
+    font-size: 22px; 
+    font-weight: 600;
+}
+
+h6, .h6 {
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #A8603A;
+}
+
+a:hover {
+    color: #727C5B;
+}
+
+a.white {
+    color: #fff;
+}
+
+a.white:hover {
+    color: #A8603A;
+}
+
+.largequote,
+p.largequote {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+
+.button {
+    background: #b57857;
+    color: #2d3844;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #fff;
+    display: table !important;
+    margin: 50px auto 15px !important;
+    width: 200px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #727C5B;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.helvetica {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.serif {
+  font-family: Serif !important;
+}
+
+
+@media screen and (max-width: 800px) {
+    h1, .h1 {
+        font-size: 48px;
+        line-height: 1.3;
+    }
+
+    h2, .h2 {
+      font-size: 38px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* --------------------
+  TYPOGRAPHY DECORATION
+-------------------- */
+
+.center {text-align: center;}
+
+.centeralign, .aligncenter, .centercol, .colcenter {
+    margin: 0 auto !important;
+    display: table !important;
+    float: none;
+}
+
+.right {text-align: right;}
+.left {text-align: left;}
+
+.imageright {float: right;width: 40%;}
+.imageleft {float: left;width: 40%;}
+
+.textleft {float: left;width: 55%;}
+.textright {float: right;width: 55%;text-align: right;}
+
+.fs10, .fs10 p {font-size: 10px !important;line-height: 16px !important;}
+.fs12, .fs12 p {font-size: 12px !important;line-height: 18px !important;}
+.fs14, .fs14 p {font-size: 14px !important;line-height: 20px !important;}
+.fs16, .fs16 p {font-size: 16px !important;line-height: 24px !important;}
+.fs18, .fs18 p {font-size: 18px !important;line-height: 26px !important;}
+.fs20, .fs20 p {font-size: 20px !important;line-height: 26px !important;}
+.fs22, .fs22 p {font-size: 22px !important;line-height: 30px !important;}
+.fs24, .fs24 p {font-size: 24px !important;line-height: 30px !important;}
+.fs26, .fs26 p {font-size: 26px !important;line-height: 32px !important;}
+.fs28, .fs28 p {font-size: 28px !important;line-height: 34px !important;}
+.fs30, .fs30 p {font-size: 30px !important;line-height: 36px !important;}
+.fs32, .fs32 p {font-size: 32px !important;line-height: 38px !important;}
+.fs34, .fs34 p, .fs34 h2 {font-size: 34px !important;line-height: 40px !important;}
+.fs36, .fs36 p {font-size: 36px !important;line-height: 42px !important;}
+.fs38, .fs38 p {font-size: 38px !important;line-height: 44px !important;}
+.fs40, .fs40 p {font-size: 40px !important;line-height: 46px !important;}
+.fs46, .fs46 p {font-size: 46px !important;line-height: 50px !important;}
+.fs50, .fs50 p {font-size: 50px !important;line-height: 54px !important;}
+.fs54, .fs54 p {font-size: 54px !important;line-height: 58px !important;}
+.fs72, .fs72 p {font-size: 72px !important;line-height: 80px !important;}
+.fs100, .fs100 p {font-size: 100px !important;line-height: 115px !important};
+.fs130, .fs100 p {font-size: 130px !important;line-height: 145px !important;}
+
+.upper, .uppercase {text-transform: uppercase !important;}
+.lower, .lowercase {text-transform: lowercase !important;}
+.textregular {text-transform: none !important;}
+.ultralight {font-weight:100;}
+.light, .light-weight, .lighter {font-weight: 300 !important;}
+.normal, .normal-weight {font-weight: 400 !important;}
+.bold, .strong {font-weight: 600 !important;}
+
+.extrabold,
+.extrabold p, .extrabold h1, .extrabold h2,
+.extrabold h3, .extrabold h4, .extrabold h5
+.extrabold h6 {
+    font-weight: 700 !important;
+}
+
+.heavy,
+.heavy p, .heavy h1, .heavy h2,
+.heavy h3, .heavy h4, .heavy h5
+.heavy h6 {
+    font-weight: 800 !important;
+}
+
+.italic {font-style: italic;}
+.wide {letter-spacing: 3px;}
+.tight {letter-spacing: -.25px;}
+.si {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.dot-point ul, ul.dot-point {
+    margin: 0;
+    list-style: none !important;
+}
+
+.dot-point ul li, ul.dot-point li {
+    list-style: none !important;
+    margin: 15px 0;
+    padding: 0 0 0 40px;
+}
+
+.dot-point ul li:before, ul.dot-point li:before {
+    content: "\f061";
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: "Font Awesome 5 Free"; 
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 767px) {
+    .textleft, .textright, .imageleft, .imageright {
+        float: none !important;
+        width: 100% !important;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    
+    .imageleft img, .imageright img {
+        float: none;
+        margin: 50px auto 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+   
+    .imageright {
+        float: left;
+        width: 40%;
+    }
+    
+    .textleft {
+        float: right;
+        width: 55%;
+    }
+    
+    .textright {
+        text-align: left;
+    }
+
+    .largequote {
+        font-size: 22px !important;
+    }
+
+}
+
+
+
+/* --------------------
+  PADDING AND MARGINS
+-------------------- */
+
+.capsule {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nomargin {margin: 0 !important;}
+
+.margintop30 {margin-top: 30px !important;}
+
+.margintop50 {margin-top: 50px;}
+
+.nobotpad, .padbot0 {padding-bottom: 0px !important;}
+
+.padtop10 {padding-top: 10px;}
+.padbot10 {padding-bottom: 10px;}
+
+.padtop15 {padding-top: 15px;}
+.padbot15 {padding-bottom: 15px;}
+.pad15 {padding: 15px 0;}
+.pagesection15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.padtop25 {padding-top: 25px;}
+.padbot25 {padding-bottom: 25px;}
+.pad25 {padding: 25px 0;}
+.pagesection25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padtop30 {padding-top: 30px !important;}
+.padbot30 {padding-bottom: 30px;}
+.pad30 {padding: 30px 0;}
+.pagesection30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.padtop50 {padding-top: 50px;}
+.padbot50 {padding-bottom: 50px;}
+.pad50 {padding: 50px 0;}
+.pagesection50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.padtop75 {padding-top: 75px !important;}
+.padbot75 {padding-bottom: 75px;}
+.pad75 {padding: 75px 0;}
+.pagesection75 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.padtop100 {padding-top: 100px !important;}
+.padbot100 {padding-bottom: 100px;}
+.pad100 {padding: 100px 0;}
+.pagesection100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.marginbottom0 {margin-bottom: 0px !important;}
+
+.hidden {display: none !important;}
+
+.mobilebotpadding {padding-bottom: 50px !important;}
+
+.smallwrapper {
+    width: 100%;
+    max-width: 600px;
+    display: table;
+    margin: 15px auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .mobilebotpadding {
+        padding-bottom: 0px !important;
+    }
+
+}
+
+
+
+/* --------------------
+    COLORS
+-------------------- */
+
+.green {
+  color: #727C5B;
+}
+
+.blue {
+  color: #2D3844;
+}
+
+.orange {
+  color: #A8603A;
+}
+
+.tan {
+  color: #FBDCA4;
+}
+
+.lightgreen {
+  color: #99AFAA;
+}
+
+.darkgray, .darkgrey {
+    color: #6b6a6a !important;
+}
+
+.lightgray, .lightgrey {
+    color: #e1e1e1 !important;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
+.black {
+  color: #252525 !important;
+}
+
+
+
+
+/********** BACKGROUND COLORS ***********/
+
+.greenbg, .greensection {
+  background: #727C5B;
+}
+
+.bluebg, .bluesection {
+  background: #2D3844;
+}
+
+.orangebg, .orangesection {
+  background: #A8603A;
+}
+
+.tanbg, .tansection {
+  background: #FBDCA4;
+}
+
+.lightgreenbg, .lightgreensection {
+  background: #99AFAA;
+}
+
+.darkgraybg, .darkgraysection,
+.darkgreybg, .darkgreysection {
+  background: #6b6a6a;
+}
+
+.lightgraybg, .graysection,
+.lightgreybg, .greysection {
+  background: #e1e1e1;
+}
+
+.whitebg, .whitesection {
+  background: #ffffff;
+}
+
+.blackbg, .blacksection {
+  background: #252525;
+}
+
+
+/********** COLOR OVERLAYS ***********/
+
+.grayoverlay *,
+.lightgrayoverlay *,
+.blueoverlay *,
+.greenoverlay * {
+  position: relative;
+}
+
+.grayoverlay:before,
+.lightgrayoverlay:before,
+.blueoverlay:before,
+.greenoverlay:before {
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+}
+
+.greenoverlay:before {
+  background-color: rgba(128,137,107,0.9);
+}
+
+.blueoverlay:before {
+  background-color: rgba(45,56,68,0.8);
+}
+
+.grayoverlay:before {
+  background-color: rgba(107,106,106,0.6);
+}
+
+.lightgrayoverlay:before {
+    background-color: rgba(225,225,225,0.5);
+}
+
+
+
+
+
+
+
+/* -------------------
+  MOBILE RESETS
+-------------------- */
+
+.mobilehide {
+    display: block !important;
+}
+    
+.mobileshow {
+    display: none !important;
+}
+
+.phonehide {
+    display: block !important;
+}
+
+.phoneshow {
+    display: none !important;
+}
+
+.mobilebotpadding {
+    padding-bottom: 50px !important;
+}
+
+@media screen and (max-width: 680px) {
+    .phonehide {
+        display: none !important;
+    }
+    
+    .phoneshow {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mobilehide {
+        display: none !important;
+    }
+    
+    .mobileshow {
+        display: block !important;
+    }
+}
+
+.smallmobilehide {
+    display: block !important;
+}
+    
+.smallmobileshow {
+    display: none !important;
+}
+
+.smallmobilebotpadding {
+    padding-bottom: 50px !important;
+}
+
+@media screen and (max-width: 780px) {
+    .smallmobilehide {
+        display: none !important;
+    }
+    
+    .smallmobileshow {
+        display: block !important;
+    }
+}
+
+
+
+
+
+
+
+/* --------------------
+    STRUCTURE
+-------------------- */
+
+.pageleft {
+  max-width: 48%;
+  float: left;
+}
+
+.pageright {
+  max-width: 48%;
+  float: right;
+}
+
+.colleft {
+  max-width: 48%;
+  margin: 0 auto auto 0;
+}
+
+.colright {
+  max-width: 48%;
+  margin: 0 0 auto auto;
+}
+
+.threecolumn {
+  width: 31%;
+  margin-right: 3%;
+  display: inline-block;
+  height: fit-content;
+}
+
+.threecolumn:last-of-type {
+  margin-right: 0;
+}
+
+.imagebackground {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  position: relative;
+    background-attachment: fixed;
+    display: table;
+    width: 100%;
+}
+
+.alignparent {
+  position: relative;
+}
+
+.alignbottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.vertcenter, .vertalign {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .pageleft, .pageright {
+    float: none;
+    width: 100%;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  
+  .threecolumn {
+    width: 100%;
+    margin: 0 0 25px;
+  }
+
+  .colleft, .colright {
+    max-width: 100%;
+    margin: 25px auto;
+  }
+
+    .imagebackground {
+        background-attachment: unset;
+    }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
