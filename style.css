@@ -1,9 +1,143 @@
 /*
 Theme Name: Hibiscus Moon
 Description: Wordpress theme for HibiscusMoon.com
-Author: ThemeFusion
+Author: Corey Winter
 Author URI: https://theme-fusion.com
 Template: Avada
 Version: 1.0.0
 Text Domain:  Avada
 */
+
+
+
+
+/* -------------------
+	AVADA RESETS
+-------------------- */
+
+
+@media screen and (min-width: 800px) {
+	.fusion-equal-height-columns.alignmiddle .fusion-row {
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+
+/* HEADER */
+
+.fusion-secondary-header {
+	background: transparent;
+	border-bottom: 0px;
+	margin-bottom: -45px;
+}
+
+.fusion-header-v5 .fusion-header {
+	border-bottom: none !important;
+}
+
+html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-header-layout-v2):not(.fusion-header-layout-v3) .fusion-header {
+	background-size: contain;
+}
+
+.fusion-sticky-header-wrapper {
+    margin-top: -85px;
+}
+
+
+/* MENU */
+
+.fusion-secondary-main-menu {
+	border-bottom: none !important;
+}
+
+.fusion-main-menu ul#menu-main-menu li {
+	font-family: MuseoSans100 !important;
+	font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fusion-secondary-menu ul#menu-secondary-menu {
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 975px) {
+	#main {padding-top: 25px !important;}
+
+	.fusion-logo {max-width: 275px;}
+
+	.fusion-secondary-header {margin-bottom: 0; display: none;}
+
+	.fusion-sticky-header-wrapper {margin-top: 0px;}
+
+	.fusion-secondary-menu ul#menu-secondary-menu {visibility: hidden;}
+}
+
+.fusion-secondary-header a {
+	font-family: 'MuseoSans300';
+    font-size: 14px;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    color: #5E1273 !important;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.fusion-secondary-header a:hover {
+	color: #428bb5 !important;
+}
+
+
+/* FOOTER */
+
+.fusion-footer-widget-area .widget-title {
+	font-family: 'MuseoSans500' !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+}
+
+.fusion-footer .fusion-footer-widget-area p {
+	color: #fff;
+	font-size: 16px;
+    font-family: 'MuseoSans300';
+}
+
+
+
+
+
+/*---------------------------
+	FORMS
+------------------------- */
+
+#hmcaform form._inline-form {
+width: 100%;
+display: table;
+padding: 20px 0;
+}
+
+#hmcaform form._inline-form input[type="text"] {
+border: none;
+border-radius: 0px;
+padding: 8px;
+font-size: 15px;
+}
+
+#hmcaform form._inline-form button._submit {
+    background-color: #bbe9f6 !important;
+width: 100% !important;
+font-size: 16px !important;
+color: #5e1273 !important;
+border-radius: 0px !important;
+padding: 8px !important;
+text-shadow: none;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+#hmcaform form._inline-form button._submit:hover {
+	opacity: 0.6 !important;
+}  

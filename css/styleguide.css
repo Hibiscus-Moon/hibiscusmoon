@@ -1,10 +1,79 @@
 
 /*
- Name:         Hibiscus Moon - Style Guide
- Author:       Corey Winter
- Author URI:   https://www.coreymwinter.com
- Version:      1.0
+ Name: Hibiscus Moon - Style Guide
+ Author: Corey Winter
+ Author URI: https://www.coreymwinter.com
+ Version: 1.0
 */
+
+
+/* -----------------
+  FONT IMPORT
+------------------- */
+
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans_700-webfont.eot');
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans_700-webfont.woff') format('woff'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans_700-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans_500-webfont.eot');
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans_500-webfont.woff') format('woff'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans_500-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans_900-webfont.eot');
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans_900-webfont.woff') format('woff'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans_900-webfont.ttf') format('truetype');  
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSans100';
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans-100-webfont.eot');
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans-100-webfont.woff') format('woff'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans-100-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans-300-webfont.eot');
+    src: url('/wp-content/themes/hibiscusmoon/fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans-300-webfont.woff') format('woff'),
+         url('/wp-content/themes/hibiscusmoon/fonts/museosans-300-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mercifulregular';
+    src: url('/wp-content/themes/hibiscusmoon/fonts/merciful-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/hibiscusmoon/fonts/merciful-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
@@ -45,64 +114,121 @@ img.imagecircle {
   TYPOGRAPHY
 -------------------- */
 
-h1, h2, h3, h4, h5, h6, 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    color: #000000; 
-    letter-spacing: 1px; 
-    font-weight: normal; 
-    -webkit-font-smoothing:antialiased; 
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    margin-bottom: 10px;
-    line-height: 1.3;
+/* FONTS */
+
+.museo {
+  font-family: 'MuseoSans700' !important;
+  letter-spacing: 2px;
 }
 
-h1, .h1 {
-    font-size: 60px; 
-    font-weight: 700;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
+.helvetica {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.opensans {
+  font-family: "Open Sans",sans-serif;
+}
+
+.serif {
+  font-family: Serif !important;
+}
+
+.merciful, .script {
+  font-weight: 400;
+  font-family: 'mercifulregular';
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.merciful-heading {
+  font-weight: 400;
+  font-family: 'mercifulregular';
+  font-size: 90px;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-top: 0;
+  text-transform: none;
+}
+
+/* Font Styles */
+
+/*h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: 2px; 
+    font-weight: normal; 
+    -webkit-font-smoothing:antialiased; 
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}*/
+
+/*h1, .h1,
+h2, .h2 {
+    font-family: 'MuseoSans700' !important;
+}
+
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: 'MuseoSans500' !important;
+}
+*/
+/*h1, .h1 {
+    font-size: 40px;
+    font-family: 'MuseoSans700' !important;
 }
 
 h2, .h2 {
-    font-size: 48px; 
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.1;
-    margin-bottom: 25px;
+    font-size: 32px;
+    font-family: 'MuseoSans700' !important;
 }
 
 h3, .h3 {
-    font-size: 28px; 
-    font-weight: 600;
+    font-size: 26px;
+    font-family: 'MuseoSans500' !important;
+    letter-spacing: 0px;
 }
 
 h4, .h4 {
-    font-size: 24px; 
-    font-weight: 700;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    color: #2D3844;
+    font-size: 24px;
+    font-family: 'MuseoSans500' !important;
+    letter-spacing: 0px;
+    font-size: 600;
 }
 
 h5, .h5 {
-    font-size: 22px; 
-    font-weight: 600;
+  font-size: 22px;
+  font-family: 'MuseoSans500' !important;
+  letter-spacing: 0px;
+  font-size: 600;
 }
 
 h6, .h6 {
-    font-size: 18px; 
-    font-weight: 600;
+  font-size: 20px;
+  font-family: 'MuseoSans500' !important;
+  letter-spacing: 0px;
+  font-size: 600;
+}*/
+
+body, p {
+    font-family: "Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 18px;
 }
 
 p {
-    font-size: 15px;
-    line-height: 1.6;
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
+    margin: 0 0 1.313em;
+}
+
+p:last-of-type {
+    margin: 0 0 0;
 }
 
 a {
@@ -121,61 +247,45 @@ a.white:hover {
     color: #A8603A;
 }
 
-.largequote,
-p.largequote {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 26px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1.2;
-    letter-spacing: 0;
+.button {
+    text-transform: uppercase;
+    font-family: 'MuseoSans700';
+    font-size: 20px !important;
+    letter-spacing: 3px;
+    background: #5E1273 !important;
+    color: #fff !important;
+    padding: 15px 35px;
+    border: none;
+    margin: 15px auto;
+    line-height: 1 !important;
+    display: table;
 }
 
-
-.button {
-    background: #b57857;
-    color: #2d3844;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 3px solid #fff;
-    display: table !important;
-    margin: 50px auto 15px !important;
-    width: 200px;
-    border-radius: 0px;
-    text-align: center;
+.button.white {
+    background: #fff !important;
+    color: #5E1273 !important;
 }
 
 .button:hover {
-    background-color: #727C5B;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
+    background: #BBE9F6 !important;
+    color: #5E1273 !important;
 }
 
-.helvetica {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.serif {
-  font-family: Serif !important;
+body .fusion-button.fusion-button-default-type {
+    font-family: 'MuseoSans700';
+    font-size: 20px !important;
+    letter-spacing: 3px;
 }
 
 
 @media screen and (max-width: 800px) {
     h1, .h1 {
-        font-size: 48px;
-        line-height: 1.3;
+      font-size: 34px;
+      line-height: 1.3;
     }
 
     h2, .h2 {
-      font-size: 38px;
-    }
-
-    p {
-        font-size: 16px;
+      font-size: 30px;
     }
 }
 
@@ -193,6 +303,12 @@ p.largequote {
     float: none;
 }
 
+@media screen and (max-width: 800px) {
+  .mobilecenter p {
+      text-align: center;
+  }
+}
+
 .right {text-align: right;}
 .left {text-align: left;}
 
@@ -202,58 +318,72 @@ p.largequote {
 .textleft {float: left;width: 55%;}
 .textright {float: right;width: 55%;text-align: right;}
 
-.fs10, .fs10 p {font-size: 10px !important;line-height: 16px !important;}
-.fs12, .fs12 p {font-size: 12px !important;line-height: 18px !important;}
-.fs14, .fs14 p {font-size: 14px !important;line-height: 20px !important;}
-.fs16, .fs16 p {font-size: 16px !important;line-height: 24px !important;}
-.fs18, .fs18 p {font-size: 18px !important;line-height: 26px !important;}
-.fs20, .fs20 p {font-size: 20px !important;line-height: 26px !important;}
-.fs22, .fs22 p {font-size: 22px !important;line-height: 30px !important;}
-.fs24, .fs24 p {font-size: 24px !important;line-height: 30px !important;}
-.fs26, .fs26 p {font-size: 26px !important;line-height: 32px !important;}
-.fs28, .fs28 p {font-size: 28px !important;line-height: 34px !important;}
-.fs30, .fs30 p {font-size: 30px !important;line-height: 36px !important;}
-.fs32, .fs32 p {font-size: 32px !important;line-height: 38px !important;}
+.fs10, .fs10 p, .fs10 h2 {font-size: 10px !important;line-height: 16px !important;}
+.fs12, .fs12 p, .fs12 h2 {font-size: 12px !important;line-height: 18px !important;}
+.fs14, .fs14 p, .fs14 h2 {font-size: 14px !important;line-height: 20px !important;}
+.fs16, .fs16 p, .fs16 h2 {font-size: 16px !important;line-height: 24px !important;}
+.fs18, .fs18 p, .fs18 h2 {font-size: 18px !important;line-height: 26px !important;}
+.fs20, .fs20 p, .fs20 h2 {font-size: 20px !important;line-height: 26px !important;}
+.fs22, .fs22 p, .fs22 h2 {font-size: 22px !important;line-height: 30px !important;}
+.fs24, .fs24 p, .fs24 h2 {font-size: 24px !important;line-height: 30px !important;}
+.fs26, .fs26 p, .fs26 h2 {font-size: 26px !important;line-height: 32px !important;}
+.fs28, .fs28 p, .fs28 h2 {font-size: 28px !important;line-height: 34px !important;}
+.fs30, .fs30 p, .fs30 h2 {font-size: 30px !important;line-height: 36px !important;}
+.fs32, .fs32 p, .fs32 h2 {font-size: 32px !important;line-height: 38px !important;}
 .fs34, .fs34 p, .fs34 h2 {font-size: 34px !important;line-height: 40px !important;}
-.fs36, .fs36 p {font-size: 36px !important;line-height: 42px !important;}
-.fs38, .fs38 p {font-size: 38px !important;line-height: 44px !important;}
-.fs40, .fs40 p {font-size: 40px !important;line-height: 46px !important;}
-.fs46, .fs46 p {font-size: 46px !important;line-height: 50px !important;}
-.fs50, .fs50 p {font-size: 50px !important;line-height: 54px !important;}
-.fs54, .fs54 p {font-size: 54px !important;line-height: 58px !important;}
-.fs72, .fs72 p {font-size: 72px !important;line-height: 80px !important;}
-.fs100, .fs100 p {font-size: 100px !important;line-height: 115px !important};
-.fs130, .fs100 p {font-size: 130px !important;line-height: 145px !important;}
+.fs36, .fs36 p, .fs36 h2 {font-size: 36px !important;line-height: 42px !important;}
+.fs38, .fs38 p, .fs38 h2 {font-size: 38px !important;line-height: 44px !important;}
+.fs40, .fs40 p, .fs40 h2 {font-size: 40px !important;line-height: 46px !important;}
+.fs46, .fs46 p, .fs46 h2 {font-size: 46px !important;line-height: 50px !important;}
+.fs50, .fs50 p, .fs50 h2 {font-size: 50px !important;line-height: 54px !important;}
+.fs54, .fs54 p, .fs54 h2 {font-size: 54px !important;line-height: 58px !important;}
+.fs72, .fs72 p, .fs72 h2 {font-size: 72px !important;line-height: 80px !important;}
+.fs100, .fs100 p, .fs100 h2 {font-size: 100px !important;line-height: 115px !important};
+.fs130, .fs100 p, .fs100 h2 {font-size: 130px !important;line-height: 145px !important;}
+
+@media screen and (max-width: 768px) {
+  .mfs10, .mfs10 p, .mfs10 h2 {font-size: 10px !important;line-height: 16px !important;}
+  .mfs12, .mfs12 p, .mfs12 h2 {font-size: 12px !important;line-height: 18px !important;}
+  .mfs14, .mfs14 p, .mfs14 h2 {font-size: 14px !important;line-height: 20px !important;}
+  .mfs16, .mfs16 p, .mfs16 h2 {font-size: 16px !important;line-height: 24px !important;}
+  .mfs18, .mfs18 p, .mfs18 h2 {font-size: 18px !important;line-height: 26px !important;}
+  .mfs20, .mfs20 p, .mfs20 h2 {font-size: 20px !important;line-height: 26px !important;}
+  .mfs22, .mfs22 p, .mfs22 h2 {font-size: 22px !important;line-height: 30px !important;}
+  .mfs24, .mfs24 p, .mfs24 h2 {font-size: 24px !important;line-height: 30px !important;}
+  .mfs26, .mfs26 p, .mfs26 h2 {font-size: 26px !important;line-height: 32px !important;}
+  .mfs28, .mfs28 p, .mfs28 h2 {font-size: 28px !important;line-height: 34px !important;}
+  .mfs30, .mfs30 p, .mfs30 h2 {font-size: 30px !important;line-height: 36px !important;}
+  .mfs32, .mfs32 p, .mfs32 h2 {font-size: 32px !important;line-height: 38px !important;}
+  .mfs34, .mfs34 p, .mfs34 h2 {font-size: 34px !important;line-height: 40px !important;}
+  .mfs36, .mfs36 p, .mfs36 h2 {font-size: 36px !important;line-height: 42px !important;}
+  .mfs38, .mfs38 p, .mfs38 h2 {font-size: 38px !important;line-height: 44px !important;}
+  .mfs40, .mfs40 p, .mfs40 h2 {font-size: 40px !important;line-height: 46px !important;}
+}
 
 .upper, .uppercase {text-transform: uppercase !important;}
 .lower, .lowercase {text-transform: lowercase !important;}
 .textregular {text-transform: none !important;}
-.ultralight {font-weight:100;}
+
+.ultralight {font-weight: 100 !important;}
 .light, .light-weight, .lighter {font-weight: 300 !important;}
-.normal, .normal-weight {font-weight: 400 !important;}
-.bold, .strong {font-weight: 600 !important;}
+.normal, .normal-weight {font-weight: 500 !important;}
+.bold, .strong {font-weight: 700 !important;}
 
 .extrabold,
 .extrabold p, .extrabold h1, .extrabold h2,
 .extrabold h3, .extrabold h4, .extrabold h5
-.extrabold h6 {
-    font-weight: 700 !important;
-}
-
+.extrabold h6,
 .heavy,
 .heavy p, .heavy h1, .heavy h2,
 .heavy h3, .heavy h4, .heavy h5
-.heavy h6 {
-    font-weight: 800 !important;
+.heavy h6  {
+    font-weight: 900 !important;
 }
 
 .italic {font-style: italic;}
 .wide {letter-spacing: 3px;}
 .tight {letter-spacing: -.25px;}
-.si {
-    text-decoration: line-through;
-    font-style: italic;
-}
+.si {text-decoration: line-through;font-style: italic;}
 
 .dot-point ul, ul.dot-point {
     margin: 0;
@@ -275,6 +405,37 @@ p.largequote {
     margin-left: -1.3em;
     width: 1.3em;
     font-weight: 900;
+}
+
+.whiteshadow {text-shadow: 2px 5px 10px #fff;}
+
+.short {line-height: 1.2 !important;}
+
+.textborder {
+  position: relative;    
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.textborder:before,
+.textborder:after{    
+  content: "";
+  position: absolute;
+  height: 12px;
+  border-bottom: 2px solid #5e1273;
+  top: 6px;
+  width: 50px;
+}
+
+.textborder:before {
+  right: 100%;
+  margin-right: 40px;
+}
+
+.textborder:after {
+  left: 100%;
+  margin-left: 40px;
 }
 
 
@@ -387,8 +548,6 @@ p.largequote {
 
 .marginbottom0 {margin-bottom: 0px !important;}
 
-.hidden {display: none !important;}
-
 .mobilebotpadding {padding-bottom: 50px !important;}
 
 .smallwrapper {
@@ -397,6 +556,8 @@ p.largequote {
     display: table;
     margin: 15px auto;
 }
+
+.hidden {display: none !important;}
 
 
 @media screen and (max-width: 1000px) {
@@ -412,40 +573,40 @@ p.largequote {
     COLORS
 -------------------- */
 
-.green {
-  color: #727C5B;
+.purple {
+  color: #5e1172 !important;
 }
 
 .blue {
-  color: #2D3844;
+  color: #bbe9f6 !important;
+}
+
+.lightgray {
+  color: #d9d9d9 !important;
+}
+
+.gray {
+  color: #9d9d9d !important;
 }
 
 .orange {
-  color: #A8603A;
+  color: #f46036 !important;
 }
 
-.tan {
-  color: #FBDCA4;
+.darkblue {
+  color: #5b85aa !important;
 }
 
-.lightgreen {
-  color: #99AFAA;
-}
-
-.darkgray, .darkgrey {
-    color: #6b6a6a !important;
-}
-
-.lightgray, .lightgrey {
-    color: #e1e1e1 !important;
+.navy {
+  color: #414770 !important;
 }
 
 .white {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .black {
-  color: #252525 !important;
+  color: #000000 !important;
 }
 
 
@@ -453,82 +614,40 @@ p.largequote {
 
 /********** BACKGROUND COLORS ***********/
 
-.greenbg, .greensection {
-  background: #727C5B;
+.purplebg {
+  background: #5e1172 !important;
 }
 
-.bluebg, .bluesection {
-  background: #2D3844;
+.bluebg {
+  background: #bbe9f6 !important;
 }
 
-.orangebg, .orangesection {
-  background: #A8603A;
+.lightgraybg {
+  background: #d9d9d9 !important;
 }
 
-.tanbg, .tansection {
-  background: #FBDCA4;
+.graybg {
+  background: #9d9d9d !important;
 }
 
-.lightgreenbg, .lightgreensection {
-  background: #99AFAA;
+.orangebg {
+  background: #f46036 !important;
 }
 
-.darkgraybg, .darkgraysection,
-.darkgreybg, .darkgreysection {
-  background: #6b6a6a;
+.darkbluebg {
+  background: #5b85aa !important;
 }
 
-.lightgraybg, .graysection,
-.lightgreybg, .greysection {
-  background: #e1e1e1;
+.navybg {
+  background: #414770 !important;
 }
 
-.whitebg, .whitesection {
-  background: #ffffff;
+.whitebg {
+  background: #ffffff !important;
 }
 
-.blackbg, .blacksection {
-  background: #252525;
-}
-
-
-/********** COLOR OVERLAYS ***********/
-
-.grayoverlay *,
-.lightgrayoverlay *,
-.blueoverlay *,
-.greenoverlay * {
-  position: relative;
-}
-
-.grayoverlay:before,
-.lightgrayoverlay:before,
-.blueoverlay:before,
-.greenoverlay:before {
-    position: absolute;
-    content:" ";
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display: block;
-    z-index:0;
-}
-
-.greenoverlay:before {
-  background-color: rgba(128,137,107,0.9);
-}
-
-.blueoverlay:before {
-  background-color: rgba(45,56,68,0.8);
-}
-
-.grayoverlay:before {
-  background-color: rgba(107,106,106,0.6);
-}
-
-.lightgrayoverlay:before {
-    background-color: rgba(225,225,225,0.5);
+.blackbg {
+  background: #000000 !important;
 }
 
 
@@ -649,9 +768,9 @@ p.largequote {
   background-position: center;
   padding: 50px 0;
   position: relative;
-    background-attachment: fixed;
-    display: table;
-    width: 100%;
+  background-attachment: fixed;
+  display: table;
+  width: 100%;
 }
 
 .alignparent {
@@ -686,9 +805,9 @@ p.largequote {
     margin: 25px auto;
   }
 
-    .imagebackground {
-        background-attachment: unset;
-    }
+  .imagebackground {
+      background-attachment: unset;
+  }
   
 }
 
@@ -697,4 +816,10 @@ p.largequote {
     padding-left: 25px;
     padding-right: 25px;
   }
+}
+
+
+
+.bgcontain {
+  background-size: contain !important;
 }
