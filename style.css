@@ -15,6 +15,13 @@ Text Domain:  Avada
 	AVADA RESETS
 -------------------- */
 
+body.page, html,
+body.blog .post .post-content,
+body.single .post .post-content,
+body.single #main #comments .comment-box {
+	color: #333;
+}
+
 
 @media screen and (min-width: 800px) {
 	.fusion-equal-height-columns.alignmiddle .fusion-row {
@@ -52,7 +59,7 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
 	border-bottom: none !important;
 }
 
-.fusion-main-menu ul#menu-main-menu li {
+.fusion-main-menu ul#menu-main-nav li {
 	font-family: MuseoSans100 !important;
 	font-style: normal;
     font-weight: 700;
@@ -92,6 +99,13 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
 
 /* FOOTER */
 
+.fusion-footer-widget-area {
+	background: #5e1273 url(/wp-content/uploads/2019/01/silver-border.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: center top !important;
+    border-top-width: 0 !important;
+}
+
 .fusion-footer-widget-area .widget-title {
 	font-family: 'MuseoSans500' !important;
     text-transform: uppercase !important;
@@ -105,7 +119,27 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
     font-family: 'MuseoSans300';
 }
 
+.fusion-footer ul#menu-footer-menu {
+	list-style-type: none;
+}
 
+.fusion-footer ul#menu-footer-menu li {
+	border: none;
+	padding: 0;
+}
+
+.fusion-footer-widget-area .widget_nav_menu li a:before {
+	content: none;
+	margin-left: 0;
+}
+
+.fusion-footer-widget-area ul li a {
+	color: #fff;
+}
+
+.fusion-footer-widget-area .widget ul li a:hover {
+	color: #4da0d2 !important;
+}	    
 
 
 
@@ -141,3 +175,140 @@ text-transform: uppercase;
 #hmcaform form._inline-form button._submit:hover {
 	opacity: 0.6 !important;
 }  
+
+
+
+/* -------------------------
+	BLOG
+--------------------------- */
+
+.sidebar .widget .heading h4, .sidebar .widget .widget-title {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+body.blog #main .fusion-blog-archive .post h2 a {
+	color: #5e1273;
+}
+
+body.blog #main .fusion-blog-archive .post h2 a:hover {
+	color: #4da0d2;
+}
+
+.fusion-blog-layout-grid-3 .fusion-post-content h2.blog-shortcode-post-title.entry-title a {
+	font-size: 18px !important;
+    font-family: 'MuseoSans700';
+    margin-top: 1em;
+    letter-spacing: 0.3px;
+    color: #5e1273 !important;
+}
+
+ .fusion-blog-layout-grid-3 .fusion-post-content h2.blog-shortcode-post-title.entry-title a:hover {
+    color: #4da0d2 !important;
+ }
+
+.sidebar .widget ul.hmca-popular-posts {
+ 	list-style-type: disc;
+ 	padding: 0 0 0 25px;
+ }
+
+.sidebar .widget ul.hmca-popular-posts li {
+	display: list-item !important;
+	line-height: 1.4;
+    padding-bottom: 10px;
+}
+
+.sidebar .widget ul.hmca-popular-posts li a {
+	color: #333;
+}
+
+.sidebar .widget ul.hmca-popular-posts li a:hover {
+    color: #4da0d2;
+}
+
+.single .fusion-sharing-box {margin-top: 115px;}
+
+.relatedposts {
+	display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.relatedposts .single-related-post {
+	flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.relatedposts .single-related-post:nth-of-type(1) {
+	padding-right: 2%;
+}
+
+.relatedposts .single-related-post:nth-of-type(2) {
+	padding: 0 1%;
+}
+
+.relatedposts .single-related-post:nth-of-type(3) {
+	padding-left: 2%;
+}
+
+.relatedposts .single-related-post a h4 {
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+
+
+ /* ----------------------
+ 	POPUPS
+ ---------------------- */
+
+ #popmake-32539.theme-25360.pum-container,
+ #popmake-36179.theme-25360.pum-container {
+    background-color: transparent;
+    background-image: url('/wp-content/uploads/2019/07/HM-CCH-PopupBG.jpg');
+  	background-size: cover;	
+    background-position: center;
+ }
+  
+  #hmcaform form._inline-form {
+    width: 100%;
+    display: table;
+    padding: 20px 0;
+  }
+  
+  #hmcaform form._inline-form input[type="text"] {
+    border: none;
+    border-radius: 0px;
+    padding: 8px;
+    font-size: 15px;
+  }
+  
+  #hmcaform form._inline-form button._submit {
+        background-color: #bbe9f6 !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    color: #5e1273 !important;
+    border-radius: 0px !important;
+    padding: 8px !important;
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+   #hmcaform form._inline-form button._submit:hover {
+  	opacity: 0.6 !important;
+  }  
+
+
+
+
+/* ------------------------------
+	WOOCOMMERCE 
+--------------------------------- */
+
+.woocommerce .woocommerce-cart-form th.product-quantity,
+.woocommerce .woocommerce-cart-form td.product-quantity {display: none !important;}
