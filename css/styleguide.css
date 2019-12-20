@@ -755,6 +755,9 @@ blockquote,
     STRUCTURE
 -------------------- */
 
+.image100,
+.image100 img {width: 100%;}
+
 .pageleft {
   max-width: 48%;
   float: left;
@@ -810,6 +813,12 @@ blockquote,
     margin-bottom: auto;
 }
 
+.align-items-center,
+.align-items-center .fusion-row {
+	display: flex;
+	align-items: center;
+}
+
 @media screen and (max-width: 980px) {
   .pageleft, .pageright {
     float: none;
@@ -831,6 +840,8 @@ blockquote,
   .imagebackground {
       background-attachment: unset;
   }
+
+  .align-items-center {display: table;}
   
 }
 

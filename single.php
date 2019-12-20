@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</section>
 				<?php endif; ?>
 
-				<?php echo do_shortcode('[hmca_related_posts]'); ?>
+				<?php avada_render_related_posts( get_post_type() ); // Render Related Posts. ?>
 
 				<?php $post_comments = get_post_meta( $post->ID, 'pyre_post_comments', true ); ?>
 				<?php if ( ( Avada()->settings->get( 'blog_comments' ) && 'no' !== $post_comments ) || ( ! Avada()->settings->get( 'blog_comments' ) && 'yes' === $post_comments ) ) : ?>
