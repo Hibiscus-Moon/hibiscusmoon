@@ -2,9 +2,9 @@
 Theme Name: Hibiscus Moon
 Description: Wordpress theme for HibiscusMoon.com
 Author: Corey Winter
-Author URI: https://theme-fusion.com
+Author URI: https://coreymwinter.com
 Template: Avada
-Version: 1.1.0
+Version: 1.1.2
 Text Domain:  Avada
 */
 
@@ -100,7 +100,7 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
 /* FOOTER */
 
 .fusion-footer-widget-area {
-	background: #5e1273 url(/wp-content/uploads/2019/01/silver-border.jpg) no-repeat !important;
+	background: #5e1273 url(/wp-content/themes/hibiscusmoon/img/silver-border.jpg) no-repeat !important;
     background-size: contain !important;
     background-position: center top !important;
     border-top-width: 0 !important;
@@ -288,7 +288,7 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
  #popmake-32539.theme-25360.pum-container,
  #popmake-36179.theme-25360.pum-container {
     background-color: transparent;
-    background-image: url('/wp-content/uploads/2019/07/HM-CCH-PopupBG.jpg');
+    background-image: url('/wp-content/uploads/2019/12/reg-closed-sg-bg.jpg');
   	background-size: cover;	
     background-position: center;
  }
@@ -331,3 +331,71 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
 
 .woocommerce .woocommerce-cart-form th.product-quantity,
 .woocommerce .woocommerce-cart-form td.product-quantity {display: none !important;}
+
+
+a.wfocu_upsell {
+    display: table;
+    margin: 10px auto;
+    color: #ffffff;
+    border-color: #762f6c;
+    background-color: #762f6c;
+    font-size: 16px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 35px;
+}
+
+a.wfocu_upsell:hover {
+    color: #5E1273 !important;
+    background: #BBE9F6 !important;
+}
+
+a.wfocu_skip_offer {
+    display: block;
+    text-align: center;
+}
+
+
+
+/* ------------------------------
+	RECENT POSTS
+--------------------------------- */
+
+.homerecentposts {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.homerecentposts .single-recent-post {
+	background-color: rgba(249,249,249,1);
+    border: 1px solid #ebeaea;
+    flex: 0 0 31%;
+    max-width: 31%;
+}
+
+.homerecentposts .single-recent-post .recent-post-bottom {
+	padding: 25px 20px;
+}
+
+.homerecentposts .single-recent-post .recent-post-bottom h3 {
+	font-size: 26px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.homerecentposts .single-recent-post .recent-post-bottom h3:hover {
+    color: #4da0d2 !important;
+}
+
+@media screen and (max-width: 768px) {
+	.homerecentposts .single-recent-post {
+	    flex: 0 0 100%;
+	    max-width: 375px;
+	    width: 100%;
+	    margin: 0 auto 25px;
+	}
+}

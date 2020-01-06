@@ -1,7 +1,7 @@
 <?php $canadaterms = get_terms( array(
 	    'taxonomy' => 'alumnilocations',
 	    'hide_empty' => true,
-	    'parent' => '7954'
+	    'parent' => '8107'
 	) ); ?>
 
 	<div class="accordian fusion-accordian">

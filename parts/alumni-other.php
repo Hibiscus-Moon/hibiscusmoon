@@ -1,17 +1,17 @@
 <?php $canadaterms = get_terms( array(
 	    'taxonomy' => 'alumnilocations',
 	    'hide_empty' => true,
-	    'parent' => '8066'
+	    'parent' => '8120'
 	) ); ?>
 
 	<div class="accordian fusion-accordian">
-		<div class="panel-group" id="accordion-44444-4">
+		<div class="panel-group" id="accordion-55555-5">
 		<?php foreach ( $canadaterms as $term ) { ?>
 			<?php $panelnumber = rand(); ?>
 			<div class="fusion-panel panel-default fusion-toggle-no-divider fusion-toggle-boxed-mode">
 				<div class="panel-heading">
 					<h4 class="panel-title toggle">
-						<a data-toggle="collapse" data-parent="#accordion-44444-4" data-target="#<?php echo $panelnumber; ?>" href="#<?php echo $panelnumber; ?>" class="active">
+						<a data-toggle="collapse" data-parent="#accordion-55555-5" data-target="#<?php echo $panelnumber; ?>" href="#<?php echo $panelnumber; ?>" class="active">
 							<div class="fusion-toggle-icon-wrapper"><i class="fa-fusion-box"></i></div>
 							<div class="fusion-toggle-heading"><?php echo $term->name; ?></div>
 						</a>
