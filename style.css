@@ -4,7 +4,7 @@ Description: Wordpress theme for HibiscusMoon.com
 Author: Corey Winter
 Author URI: https://coreymwinter.com
 Template: Avada
-Version: 1.1.2
+Version: 1.1.4
 Text Domain:  Avada
 */
 
@@ -40,24 +40,18 @@ body.single #main #comments .comment-box {
 	margin-bottom: -45px;
 }
 
-.fusion-header-v5 .fusion-header {
-	border-bottom: none !important;
-}
+.fusion-header-v5 .fusion-header {border-bottom: none !important;}
 
 html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-header-layout-v2):not(.fusion-header-layout-v3) .fusion-header {
 	background-size: contain;
 }
 
-.fusion-sticky-header-wrapper {
-    margin-top: -85px;
-}
+.fusion-sticky-header-wrapper {margin-top: -85px;}
 
 
 /* MENU */
 
-.fusion-secondary-main-menu {
-	border-bottom: none !important;
-}
+.fusion-secondary-main-menu {border-bottom: none !important;}
 
 .fusion-main-menu ul#menu-main-nav li {
 	font-family: MuseoSans100 !important;
@@ -66,19 +60,14 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
     text-transform: uppercase;
 }
 
-.fusion-secondary-menu ul#menu-secondary-menu {
-	margin-top: 40px;
-}
+.fusion-secondary-menu ul#menu-secondary-menu {margin-top: 40px;}
 
 @media screen and (max-width: 975px) {
 	#main {padding-top: 25px !important;}
 
 	.fusion-logo {max-width: 275px;}
-
 	.fusion-secondary-header {margin-bottom: 0; display: none;}
-
 	.fusion-sticky-header-wrapper {margin-top: 0px;}
-
 	.fusion-secondary-menu ul#menu-secondary-menu {visibility: hidden;}
 }
 
@@ -92,9 +81,7 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
     border-bottom: none;
 }
 
-.fusion-secondary-header a:hover {
-	color: #428bb5 !important;
-}
+.fusion-secondary-header a:hover {color: #428bb5 !important;}
 
 
 /* FOOTER */
@@ -119,9 +106,7 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
     font-family: 'MuseoSans300';
 }
 
-.fusion-footer ul#menu-footer-menu {
-	list-style-type: none;
-}
+.fusion-footer ul#menu-footer-menu {list-style-type: none;}
 
 .fusion-footer ul#menu-footer-menu li {
 	border: none;
@@ -133,14 +118,9 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
 	margin-left: 0;
 }
 
-.fusion-footer-widget-area ul li a {
-	color: #fff;
-}
+.fusion-footer-widget-area ul li a {color: #fff;}
 
-.fusion-footer-widget-area .widget ul li a:hover {
-	color: #4da0d2 !important;
-}	    
-
+.fusion-footer-widget-area .widget ul li a:hover {color: #4da0d2 !important;}	    
 
 .tqb-template-style-0 .tqb-answer-inner-wrapper:not(.tqb-open-ended-wrapper) .tqb-answer-action {
     height: auto !important;
@@ -158,36 +138,34 @@ html:not(.avada-header-color-not-opaque) .avada-has-header-bg-image:not(.fusion-
 ------------------------- */
 
 #hmcaform form._inline-form {
-width: 100%;
-display: table;
-padding: 20px 0;
+	width: 100%;
+	display: table;
+	padding: 20px 0;
 }
 
 #hmcaform form._inline-form input[type="text"] {
-border: none;
-border-radius: 0px;
-padding: 8px;
-font-size: 15px;
+	border: none;
+	border-radius: 0px;
+	padding: 8px;
+	font-size: 15px;
 }
 
 #hmcaform form._inline-form button._submit {
     background-color: #bbe9f6 !important;
-width: 100% !important;
-font-size: 16px !important;
-color: #5e1273 !important;
-border-radius: 0px !important;
-padding: 8px !important;
-text-shadow: none;
-font-weight: bold;
-text-transform: uppercase;
+	width: 100% !important;
+	font-size: 16px !important;
+	color: #5e1273 !important;
+	border-radius: 0px !important;
+	padding: 8px !important;
+	text-shadow: none;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-#hmcaform form._inline-form button._submit:hover {
-	opacity: 0.6 !important;
-}  
+#hmcaform form._inline-form button._submit:hover {opacity: 0.6 !important;}  
 
-
-.gform_wrapper label.gfield_label, .gform_wrapper legend.gfield_label {
+.gform_wrapper label.gfield_label, 
+.gform_wrapper legend.gfield_label {
     font-weight: 500 !important;
 }
 
@@ -203,13 +181,9 @@ text-transform: uppercase;
 	font-weight: bold;
 }
 
-body.blog #main .fusion-blog-archive .post h2 a {
-	color: #5e1273;
-}
+body.blog #main .fusion-blog-archive .post h2 a {color: #5e1273;}
 
-body.blog #main .fusion-blog-archive .post h2 a:hover {
-	color: #4da0d2;
-}
+body.blog #main .fusion-blog-archive .post h2 a:hover {color: #4da0d2;}
 
 .fusion-blog-layout-grid-3 .fusion-post-content h2.blog-shortcode-post-title.entry-title a {
 	font-size: 18px !important;
@@ -234,13 +208,9 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
     padding-bottom: 10px;
 }
 
-.sidebar .widget ul.hmca-popular-posts li a {
-	color: #333;
-}
+.sidebar .widget ul.hmca-popular-posts li a {color: #333;}
 
-.sidebar .widget ul.hmca-popular-posts li a:hover {
-    color: #4da0d2;
-}
+.sidebar .widget ul.hmca-popular-posts li a:hover {color: #4da0d2;}
 
 .single .fusion-sharing-box {margin-top: 115px;}
 
@@ -258,17 +228,9 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
     margin-bottom: 15px;
 }
 
-.relatedposts .single-related-post:nth-of-type(1) {
-	padding-right: 2%;
-}
-
-.relatedposts .single-related-post:nth-of-type(2) {
-	padding: 0 1%;
-}
-
-.relatedposts .single-related-post:nth-of-type(3) {
-	padding-left: 2%;
-}
+.relatedposts .single-related-post:nth-of-type(1) {padding-right: 2%;}
+.relatedposts .single-related-post:nth-of-type(2) {padding: 0 1%;}
+.relatedposts .single-related-post:nth-of-type(3) {padding-left: 2%;}
 
 .relatedposts .single-related-post a h4 {
 	line-height: 1.4;
@@ -293,21 +255,21 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
     background-position: center;
  }
   
-  #hmcaform form._inline-form {
+#hmcaform form._inline-form {
     width: 100%;
     display: table;
     padding: 20px 0;
-  }
+}
   
-  #hmcaform form._inline-form input[type="text"] {
+#hmcaform form._inline-form input[type="text"] {
     border: none;
     border-radius: 0px;
     padding: 8px;
     font-size: 15px;
-  }
+}
   
-  #hmcaform form._inline-form button._submit {
-        background-color: #bbe9f6 !important;
+#hmcaform form._inline-form button._submit {
+    background-color: #bbe9f6 !important;
     width: 100% !important;
     font-size: 16px !important;
     color: #5e1273 !important;
@@ -316,11 +278,9 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
     text-shadow: none;
     font-weight: bold;
     text-transform: uppercase;
-  }
+}
   
-   #hmcaform form._inline-form button._submit:hover {
-  	opacity: 0.6 !important;
-  }  
+#hmcaform form._inline-form button._submit:hover {opacity: 0.6 !important;}  
 
 
 
@@ -332,13 +292,12 @@ body.blog #main .fusion-blog-archive .post h2 a:hover {
 .woocommerce .woocommerce-cart-form th.product-quantity,
 .woocommerce .woocommerce-cart-form td.product-quantity {display: none !important;}
 
-
 a.wfocu_upsell {
     display: table;
     margin: 10px auto;
     color: #ffffff;
-    border-color: #762f6c;
-    background-color: #762f6c;
+    border-color: #5e1273;
+    background-color: #5e1273;
     font-size: 16px !important;
     letter-spacing: 2px !important;
     text-transform: uppercase;
@@ -355,6 +314,67 @@ a.wfocu_upsell:hover {
 a.wfocu_skip_offer {
     display: block;
     text-align: center;
+}
+
+body.woocommerce-cart .woocommerce a.button,
+body.woocommerce-cart.fusion-button_size-xlarge .woocommerce button.button.fusion-button-default-size {
+	padding: 15px 25px !important;
+	width: auto !important;
+	font-family: 'MuseoSans700' !important;
+    font-size: 16px !important;
+    letter-spacing: 2px !important;
+}
+
+body.woocommerce-cart .woocommerce .woocommerce-message a.button,
+body.woocommerce-cart .woocommerce .return-to-shop a.button {
+	font-family: 'MuseoSans700' !important;
+	margin: auto !important;
+	padding: 15px !important;
+	font-size: 14px !important;
+	width: auto !important;
+}
+
+body.woocommerce-cart .cart-collaterals .shipping-coupon .coupon #avada_coupon_code,
+.woocommerce .checkout_coupon .coupon-input .input-text {
+	height: 46px !important;
+}
+
+body.woocommerce-checkout #main,
+body.woocommerce-cart #main {
+	padding-top: 25px !important;
+}
+
+body.woocommerce-checkout .woocommerce-content-box.checkout_coupon {display: none !important;}
+
+body.woocommerce-checkout .fusion-secondary-main-menu,
+body.woocommerce-cart .fusion-secondary-main-menu {
+	display: none;
+}
+
+body.woocommerce-checkout #menu-secondary-menu,
+body.woocommerce-cart #menu-secondary-menu {
+	visibility: hidden !important;
+}
+
+body.woocommerce-checkout .avada-myaccount-user {display: none !important;}
+body.woocommerce-checkout.woocommerce-order-received .avada-myaccount-user {display: flex !important;}
+
+
+.hmca-checkout {display: table; width: 100%;}
+.hmca-checkout-left {display: table; float: left; width: 70%;}
+.hmca-checkout-right {display: table; float: right; width: 28%;}
+.hmca-checkout .single-cart-testimonial {
+    margin: 25px auto; 
+    background: #f1f1f1;
+    padding: 15px;
+    line-height: 1.3;
+}
+
+.hmca-checkout .single-cart-testimonial h6 {margin: 10px auto 0;font-weight: bold;}
+
+@media screen and (max-width: 900px) {
+    .hmca-checkout-left, 
+    .hmca-checkout-right {display: table; float: none; width: 100%;}
 }
 
 
@@ -377,9 +397,7 @@ a.wfocu_skip_offer {
     max-width: 31%;
 }
 
-.homerecentposts .single-recent-post .recent-post-bottom {
-	padding: 25px 20px;
-}
+.homerecentposts .single-recent-post .recent-post-bottom {padding: 25px 20px;}
 
 .homerecentposts .single-recent-post .recent-post-bottom h3 {
 	font-size: 26px;
@@ -387,9 +405,7 @@ a.wfocu_skip_offer {
 	margin-bottom: 0;
 }
 
-.homerecentposts .single-recent-post .recent-post-bottom h3:hover {
-    color: #4da0d2 !important;
-}
+.homerecentposts .single-recent-post .recent-post-bottom h3:hover {color: #4da0d2 !important;}
 
 @media screen and (max-width: 768px) {
 	.homerecentposts .single-recent-post {
@@ -398,4 +414,58 @@ a.wfocu_skip_offer {
 	    width: 100%;
 	    margin: 0 auto 25px;
 	}
+}
+
+
+
+/* ------------------------------
+    QUIZZES
+--------------------------------- */
+
+.gform_wrapper #gform_26 input[type="submit"].gform_button,
+.gform_wrapper #gform_25 input[type="submit"].gform_button,
+.gform_wrapper #gform_24 input[type="submit"].gform_button,
+.gform_wrapper #gform_23 input[type="submit"].gform_button {
+    color: #fff !important;
+}
+
+.gform_wrapper #gform_26 input[type="submit"].gform_button:hover,
+.gform_wrapper #gform_25 input[type="submit"].gform_button:hover,
+.gform_wrapper #gform_24 input[type="submit"].gform_button:hover,
+.gform_wrapper #gform_23 input[type="submit"].gform_button:hover {
+    color: #5e1172 !important;
+}
+
+
+
+
+
+/* -------------------
+    404 Page
+-------------------- */
+
+.imagebackground.errorheader {
+    background-image: url('/wp-content/uploads/2019/01/404-banner.jpg'); 
+    height: 600px; 
+    display: block !important;
+    background-position: top center !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    #post-404page .container {
+        max-width: 750px;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imagebackground.errorheader {height: 300px; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .imagebackground.errorheader {height: 400px; }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+    .imagebackground.errorheader {height: 500px; }
 }

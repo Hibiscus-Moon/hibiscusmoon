@@ -11,91 +11,63 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 ?>
+
+<style>
+	html:not(.avada-has-site-width-percent) #main {padding-left: 0 !important;padding-right: 0 !important;}
+	body.has-sidebar #content,
+	#content.full-width,
+	#content {width: 100% !important;}
+
+	#main .fusion-row {max-width: 100% !important;}
+</style>
+
 <?php get_header(); ?>
+
+
+<div class="imagebackground errorheader"></div>
 <section id="content" class="full-width">
 	<div id="post-404page">
 		<div class="post-content">
-			<?php
-			// Render the page titles.
-			$subtitle = esc_html__( 'Oops, This Page Could Not Be Found!', 'Avada' );
-			Avada()->template->title_template( $subtitle );
-			?>
 			<div class="fusion-clearfix"></div>
 			<div class="error-page">
-				<div class="fusion-columns fusion-columns-3">
-					<div class="fusion-column col-lg-4 col-md-4 col-sm-4 fusion-error-page-404">
-						<div class="error-message">404</div>
+				<div class="container">
+					<div class="fusion-columns fusion-columns-1 padbot50">
+						<div class="fusion-column col-lg-12 col-md-12 col-sm-12 padbot50 padtop25">
+							<h3 style="text-align: center;"><em>Just kidding!</em></h3>
+							<p style="text-align: center;"><strong>But … you’ve arrived at a page that no longer exists here on my website … <em>or it never did in the first place.</em></strong></p>
+							<p style="text-align: center;">The mysteries of the universe never cease to amaze me too!</p>
+							<a href="/" class="button">Go Back Home</a>
+						</div>
 					</div>
-					<div class="fusion-column col-lg-4 col-md-4 col-sm-4 useful-links fusion-error-page-useful-links">
-						<h3><?php esc_html_e( 'Helpful Links', 'Avada' ); ?></h3>
-						<?php
-						// Get needed checklist default settings.
-						$circle_class      = ( Avada()->settings->get( 'checklist_circle' ) ) ? 'circle-yes' : 'circle-no';
-						$font_size         = Fusion_Sanitize::convert_font_size_to_px( Avada()->settings->get( 'checklist_item_size' ), Avada()->settings->get( 'body_typography', 'font-size' ) );
-						$checklist_divider = ( 'yes' === Avada()->settings->get( 'checklist_divider' ) ) ? ' fusion-checklist-divider' : '';
-
-						// Calculated derived values.
-						$circle_yes_font_size    = $font_size * 0.88;
-						$line_height             = $font_size * 1.7;
-						$icon_margin             = $font_size * 0.7;
-						$icon_margin_position    = ( is_rtl() ) ? 'left' : 'right';
-						$content_margin          = $line_height + $icon_margin;
-						$content_margin_position = ( is_rtl() ) ? 'right' : 'left';
-
-						// Set markup depending on icon circle being used or not.
-						if ( Avada()->settings->get( 'checklist_circle' ) ) {
-							$before = '<span class="icon-wrapper circle-yes" style="background-color:var(--checklist_circle_color);font-size:' . $font_size . 'px;height:' . $line_height . 'px;width:' . $line_height . 'px;margin-' . $icon_margin_position . ':' . $icon_margin . 'px;" ><i class="fusion-li-icon fa fa-angle-right" style="color:var(--checklist_icons_color);"></i></span><div class="fusion-li-item-content" style="margin-' . $content_margin_position . ':' . $content_margin . 'px;">';
-						} else {
-							$before = '<span class="icon-wrapper circle-no" style="font-size:' . $font_size . 'px;height:' . $line_height . 'px;width:' . $line_height . 'px;margin-' . $icon_margin_position . ':' . $icon_margin . 'px;" ><i class="fusion-li-icon fa fa-angle-right" style="color:var(--checklist_icons_color);"></i></span><div class="fusion-li-item-content" style="margin-' . $content_margin_position . ':' . $content_margin . 'px;">';
-						}
-
-						$error_page_menu_args = [
-							'theme_location' => '404_pages',
-							'depth'          => 1,
-							'container'      => false,
-							'menu_id'        => 'fusion-checklist-1',
-							'menu_class'     => 'fusion-checklist fusion-404-checklist error-menu' . $checklist_divider,
-							'items_wrap'     => '<ul id="%1$s" class="%2$s" style="font-size:' . $font_size . 'px;line-height:' . $line_height . 'px;">%3$s</ul>',
-							'before'         => $before,
-							'after'          => '</div>',
-							'echo'           => 0,
-							'item_spacing'   => 'discard',
-							'fallback_cb'    => 'fusion_error_page_menu_fallback',
-						];
-
-						// Get the menu markup with correct containers.
-						$error_page_menu = wp_nav_menu( $error_page_menu_args );
-
-						/**
-						 * Fallback to main menu if no 404 menu is set.
-						 *
-						 * @since 5.5
-						 * @param array $error_page_menu_args The menu arguments.
-						 * @return string|false
-						 */
-						function fusion_error_page_menu_fallback( $error_page_menu_args ) {
-							if ( has_nav_menu( 'main_navigation' ) ) {
-								$error_page_menu_args['theme_location'] = 'main_navigation';
-							}
-
-							unset( $error_page_menu_args['fallback_cb'] );
-
-							return wp_nav_menu( $error_page_menu_args );
-						}
-
-						// Make sure divider lines have correct color.
-						if ( $checklist_divider ) {
-							$error_page_menu = str_replace( 'class="menu-item ', 'style="border-bottom-color:var(--checklist_divider_color);" class="menu-item ', $error_page_menu );
-						}
-
-						echo $error_page_menu; // phpcs:ignore WordPress.Security.EscapeOutput
-						?>
-					</div>
-					<div class="fusion-column col-lg-4 col-md-4 col-sm-4 fusion-error-page-search">
-						<h3><?php esc_html_e( 'Search Our Website', 'Avada' ); ?></h3>
-						<p><?php esc_html_e( 'Can\'t find what you need? Take a moment and do a search below!', 'Avada' ); ?></p>
+				</div>
+				<div class="pagesection50 imagebackground" style="background-image: url('/wp-content/uploads/2018/11/FooterBackground.jpg');">
+					<div class="container">
 						<div class="search-page-search-form">
 							<?php echo get_search_form( false ); ?>
+						</div>
+					</div>
+				</div>
+
+				<div class="container pagesection50">
+					<h2 class="center padbot50">Perhaps You Would Like to Explore...</h2>
+					<div class="fusion-columns fusion-columns-3">
+						<div class="fusion-column col-lg-4 col-md-4 col-sm-4" style="text-align: center;">
+							<a href="/crystal-path-quiz/" title="Crystal Path Quiz" target="_blank" rel="noopener noreferrer" style="outline: none;">
+								<img src="/wp-content/uploads/2019/01/error-quiz.jpg" alt="Free Crystal Goodness">
+							</a>
+							<a class="button" href="/crystal-path-quiz/" title="Crystal Path Quiz" target="_blank" rel="noopener noreferrer">TAKE THE QUIZ</a>
+						</div>
+						<div class="fusion-column col-lg-4 col-md-4 col-sm-4" style="text-align: center;">
+							<a href="/shop/" title="Shop Crystals" target="_blank" rel="noopener noreferrer">
+								<img src="/wp-content/uploads/2019/01/error-shop.jpg" alt="Certified Crystal Healers Course">
+							</a>
+							<a class="button" href="/shop/" title="Shop">SHOP</a>
+						</div>
+						<div class="fusion-column col-lg-4 col-md-4 col-sm-4" style="text-align: center;">
+							<a href="/blog/" title="Crystal Grids Book" target="_blank" rel="noopener noreferrer"style="outline: none;">
+								<img src="/wp-content/uploads/2019/01/error-blog.jpg" alt="Crystal Grids Book">
+							</a>
+							<a class="button" href="/blog/" title="Blog">BLOG</a>
 						</div>
 					</div>
 				</div>

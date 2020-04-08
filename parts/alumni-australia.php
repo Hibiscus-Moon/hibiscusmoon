@@ -42,15 +42,23 @@
 						$alumniphone = get_post_meta( get_the_ID(), 'hmcaalumni_phone', true );
 						$alumniwebsite = get_post_meta( get_the_ID(), 'hmcaalumni_website', true );
 						$alumnifacebook = get_post_meta( get_the_ID(), 'hmcaalumni_facebook', true );
-						$alumnitwitter = get_post_meta( get_the_ID(), 'hmcaalumni_twitter', true ); ?>
+						$alumnitwitter = get_post_meta( get_the_ID(), 'hmcaalumni_twitter', true );
+						$alumniadvanced = get_post_meta ( get_the_ID(), 'hmcaalumni_featured', true ); ?>
 
-						<div class="panel-body toggle-content fusion-clearfix">
-							<h5 class="marginbottom0 bold"><?php the_title(); ?></h5>
+						<div class="panel-body toggle-content fusion-clearfix black" style="margin-bottom: 35px;">
+							
+							<?php if ($alumniadvanced) { ?>
+								<h5 class="bold" style="margin: 0;"><?php the_title(); ?>, Advanced Crystal Master</h5>
+							<?php } else { ?>
+								<h5 class="bold black" style="margin: 0;"><?php the_title(); ?>, Certified Crystal Healer</h5>
+							<?php } ?>
+
 							<?php if($alumnidescription) {
 								echo $alumnidescription;
 								echo '<br />';
 							} ?>
 							<?php if($alumnibusiness) {
+								echo '<strong>Business:</strong> ';
 								echo $alumnibusiness;
 								echo '<br />';
 							} ?>
@@ -61,8 +69,11 @@
 							} ?>
 							<?php if($alumniemail) {
 								echo '<strong>Email:</strong> ';
+								echo '<a href="mailto:';
 								echo $alumniemail;
-								echo '<br />';
+								echo '">';
+								echo $alumniemail;
+								echo '</a><br />';
 							} ?>
 							<?php if($alumniphone) {
 								echo '<strong>Phone:</strong> ';
@@ -71,17 +82,27 @@
 							} ?>
 							<?php if($alumniwebsite) {
 								echo '<strong>Website:</strong> ';
+								echo '<a href="http:';
 								echo $alumniwebsite;
-								echo '<br />';
+								echo '" target="_blank">';
+								echo $alumniwebsite;
+								echo '</a><br />';
 							} ?>
 							<?php if($alumnifacebook) {
 								echo '<strong>Facebook:</strong> ';
+								echo '<a href="https://facebook.com/';
 								echo $alumnifacebook;
-								echo '<br />';
+								echo '" target="_blank">';
+								echo $alumnifacebook;
+								echo '</a><br />';
 							} ?>
 							<?php if($alumnitwitter) {
 								echo '<strong>Twitter:</strong> ';
+								echo '<a href="https://twitter.com/';
 								echo $alumnitwitter;
+								echo '" target="_blank">';
+								echo $alumnitwitter;
+								echo '</a>';
 							} ?>
 						</div>
 					<?php } ?>
