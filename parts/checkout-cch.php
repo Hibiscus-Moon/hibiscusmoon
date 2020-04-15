@@ -33,3 +33,11 @@
 		// no posts found
 	} ?>
 </div>
+
+<div class="pagesection25 fs14">
+    <p><strong><i class="fas fa-check" aria-hidden="true"></i> 21 Day Refund Policy -</strong> We're fully invested in your transformation and you can feel secure in knowing that there is a guarantee in place: You can take this course for a full 21 days. If you do the homework and participate in our Facebook Group and don't feel I've delivered on my promises here, we'll happily refund your tuition. <a href="https://hibiscusmooncrystalacademy.com/enrollment-policies-student-waiver-form/" target="_blank">Click here for full details.</a></p>
+
+	<p><strong><i class="fas fa-check" aria-hidden="true"></i> Security &amp; Privacy Policy -</strong> All personal information you submit is encrypted and secure. We will not share or trade online information that you provide us. <a href="https://hibiscusmooncrystalacademy.com/privacy-policy/" target="_blank">Click here for full details.</a></p>
+
+	<p><strong><i class="fas fa-check" aria-hidden="true"></i> Email -</strong> <a href="mailto:support@hibiscusmoon.com" target="_blank">support@hibiscusmoon.com</a></p>
+</div>
