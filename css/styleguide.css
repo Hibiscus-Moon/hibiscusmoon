@@ -897,3 +897,13 @@ blockquote,
     .mobilecenter p {text-align: center;}
     img.headerbarimage {margin-top: -20px;max-width:350px !important;}
   }
+
+
+/* --------------------
+    WooCommerce Templates
+-------------------- */
+.hmca_wcp_template--simple_gf .product .summary.entry-summary {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
