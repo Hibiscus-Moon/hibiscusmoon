@@ -907,3 +907,15 @@ blockquote,
   max-width: 800px;
 }
 
+
+
+
+
+
+body.page-template-100-width.avada-has-header-hidden #main {
+  padding-top: 0;
+}
+
+body.page-template-100-width.avada-has-header-hidden #main p:empty {
+  display: none;
+}
