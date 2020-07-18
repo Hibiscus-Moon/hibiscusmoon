@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="avada-myaccount-user">
 	<div class="avada-myaccount-user-column username">
-		<?php if ( $current_user->display_name ) { ?>
+		<?php if ( !empty( $current_user->display_name ) ) { ?>
 			<span class="hello">
 				<?php
 				printf(
