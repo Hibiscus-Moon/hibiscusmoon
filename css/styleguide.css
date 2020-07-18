@@ -125,8 +125,40 @@ img.headerbarimage {
 /* FONTS */
 
 .museo {
-  font-family: 'MuseoSans700' !important;
+  font-family: 'MuseoSans700', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
   letter-spacing: 2px;
+}
+
+.primary-font-light,
+.primary-font-light p,
+.fusion-text.primary-font-light p {
+  font-family: 'MuseoSans300', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.primary-font-normal,
+.fusion-text.primary-font-normal p {
+  font-family: 'MuseoSans500', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.primary-font-bold,
+.fusion-title.primary-font-bold h3,
+.fusion-title.primary-font-bold h5,
+.fusion-text.primary-font-bold p {
+  font-family: 'MuseoSans700', "Open Sans", "Arial Black", Gadget, sans-serif !important;
+}
+
+.primary-font-bolder,
+.fusion-title.primary-font-bolder h3,
+.fusion-title.primary-font-bolder h5,
+.fusion-text.primary-font-bolder p {
+  font-family: 'MuseoSans900', "Open Sans", "Arial Black", Gadget, sans-serif !important;
+}
+
+.script-accent-header-font {
+  font-family: 'mercifulregular', cursive;
+  text-transform: none !important;
+  font-size: 280%;
+  line-height: 0;
 }
 
 .helvetica {
@@ -134,7 +166,7 @@ img.headerbarimage {
 }
 
 .opensans {
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .serif {
@@ -183,6 +215,14 @@ img.headerbarimage {
   letter-spacing: -1px;
   margin-top: 0;
   text-transform: none;
+}
+
+.ls-1 {
+  letter-spacing: 1.6px;
+}
+
+.ml-5 {
+  margin-left: 5px;
 }
 
 /* Font Styles */
@@ -410,7 +450,12 @@ blockquote,
   .mfs40, .mfs40 p, .mfs40 h2 {font-size: 40px !important;line-height: 46px !important;}
 }
 
-.upper, .uppercase {text-transform: uppercase !important;}
+.text-uppercase, 
+.text-uppercase h3, 
+.upper, 
+.uppercase {
+  text-transform: uppercase !important;
+}
 .lower, .lowercase {text-transform: lowercase !important;}
 .textregular {text-transform: none !important;}
 
@@ -596,6 +641,7 @@ blockquote,
     padding-bottom: 100px;
 }
 
+.mb-0,
 .marginbottom0,
 .marginbot0 {margin-bottom: 0px !important;}
 
@@ -913,9 +959,226 @@ blockquote,
 
 
 body.page-template-100-width.avada-has-header-hidden #main {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 body.page-template-100-width.avada-has-header-hidden #main p:empty {
   display: none;
+}
+
+
+.text-small p,
+p.text-small,
+span.text-small {
+  font-size: 90%;
+  line-height: 1.5;
+}
+
+.text-smaller p,
+p.text-smaller {
+  font-size: 80%;
+}
+
+
+
+
+.hmf-header-white,
+.hmf-header-white h1,
+.hmf-header-white h2,
+.hmf-header-white h3,
+.hmf-header-white h4,
+.hmf-header-white h5,
+.hmf-header-white h6 {
+  color: #fff !important;
+}
+
+.hmf-no-header-margin,
+.fusion-title.hmf-no-header-margin,
+.hmf-no-header-margin h1,
+.hmf-no-header-margin h2,
+.hmf-no-header-margin h3,
+.hmf-no-header-margin h4,
+.hmf-no-header-margin h5,
+.hmf-no-header-margin h6 {
+  margin-bottom: 0 !important;
+}
+
+.fusion-text.purple-quote:before {
+  content: url(/wp-content/themes/hibiscusmoon/img/hm-purple-quotes.jpg);
+  display: block;
+  float: left;
+}
+.fusion-text.purple-quote p {
+  margin-left: 64px;
+  line-height: 1.4;
+  min-height: 60px;
+}
+
+@media only screen and (min-width: 800px ) {
+  .hmf-container-narrow-800 {
+    max-width: 800px; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+}
+
+.block-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+
+.hmf-container--cch-shout-out {
+  max-width: 900px; 
+}
+
+.hmf-container-narrow-1100 {
+  max-width: 1100px; 
+}
+
+.hmf-container-narrow-600 {
+  max-width: 600px; 
+}
+
+.hmf-container-narrow-400 {
+  max-width: 400px; 
+}
+
+.fusion-checklist.hmf-list-style-1 .fusion-li-icon, 
+ul.fusion-checklist.hmf-list-style-1 .fusion-li-icon {
+  vertical-align: top;
+  font-size: 30px;
+}
+
+ul.fusion-checklist.hmf-list-style-1 .fusion-li-item-content p {
+  font-family: 'MuseoSans300', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
+  line-height: 1.6!important;
+}
+
+ul.fusion-checklist.hmf-list-style-1 .fusion-li-item-content p strong {
+  font-family: 'MuseoSans500', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.cch-list--learn-to-work {
+  max-width: 575px;
+}
+
+
+.button-sparkle-style-1,
+.button-default.button-sparkle-style-1 {
+  background-image: url('/wp-content/themes/hibiscusmoon/img/button-sparkle-style-1-bg.jpg');
+  background-size: cover;
+}
+
+.button-sparkle-style-2,
+.button-default.button-sparkle-style-2 {
+  background-image: url('/wp-content/themes/hibiscusmoon/img/button-sparkle-style-2-bg.jpg');
+  background-size: cover;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.pab-0 {
+  bottom: 0;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+.p-5 {
+  padding: 25px !important;
+}
+
+.hmca_ac_form {
+
+}
+
+#hmca_ac_form.hmca_ac_form form._inline-form {
+  width: 100% !important;
+  font-family: 'MuseoSans500', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
+  margin-top: 0 !important;
+}
+
+#hmca_ac_form.hmca_ac_form form._inline-form input[type="text"] {
+  border: none !important;
+  border-radius: 0px !important;
+  padding: 8px;
+  font-size: 15px;
+}
+
+#hmca_ac_form.hmca_ac_form form._inline-form button._submit {
+  background-color: #bbe9f6 !important;
+  width: 100% !important;
+  font-size: 16px !important;
+  color: #5e1273 !important;
+  border-radius: 0px !important;
+  padding: 8px !important;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-family: 'MuseoSans700', "Open Sans", "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+#hmca_ac_form form._inline-form button._submit:hover {opacity: 0.6 !important;}  
+
+.gform_wrapper label.gfield_label, 
+.gform_wrapper legend.gfield_label {
+    font-weight: 500 !important;
+}
+
+
+
+::-moz-selection { background: #5e1172; color: #fff; }
+::selection { background: #5e1172; color: #fff; }
+
+
+.hmca-has-sacred-geo_s03 .imageframe-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.hmca-sacred-geo_s03 {
+  overflow: visible !important;
+  display: flex !important;
+}
+
+.hmca-sacred-geo_s03:before {
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+  /* left: 0; */
+  left: -27%;
+  height: 60%;
+  align-self: center;
+  content: " ";
+  background: url(/wp-content/themes/hibiscusmoon/img/sacred-geo_s03.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
+
+body.wfacp_checkout-template .woocommerce-invalid:after {
+  display: none;
+}
+
+body.wfacp_checkout-template a.button.sv-wc-payment-gateway-payment-form-manage-payment-methods {
+    background: none!important;
+    background-color: transparent;
+    color: #dd7575!important;
+    font-size: 12px!important;
+    text-transform: none;
+    letter-spacing: 0;
 }
