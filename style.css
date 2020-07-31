@@ -469,3 +469,249 @@ body.woocommerce-checkout.woocommerce-order-received .avada-myaccount-user {disp
 @media screen and (min-width: 1201px) and (max-width: 1500px) {
     .imagebackground.errorheader {height: 500px; }
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    text-transform: none !important;
+}
+.headers-bold {
+    font-weight: 700;
+    font-size: 38px;
+    font-family: 'MuseoSans700';
+    letter-spacing: -0.014em;
+    color: #5e1273;
+    line-height: 38px;
+}
+.merciful-top {
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 80px;
+    font-family: 'merciful-script', cursive;
+    margin-right: 8px;
+    color: #5e1273;
+}
+.fusion-content-boxes.content-boxes-icon-boxed .content-container, .fusion-content-boxes.content-boxes-icon-boxed .fusion-read-more {
+    text-align: left;
+}
+.fusion-accordian .panel-title .fusion-toggle-heading {
+    margin-left: 18px;
+    font-weight: 400;
+    color: #5e1273;
+}
+.fusion-reading-box-container .reading-box {
+    padding: 5px 5px 5px 5px;
+}
+
+h2, h2.h-custom-headline {
+    font-family: 'MuseoSans700' !important;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.testimonial-circles {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.fusion-accordian #accordion-114-1 .panel-title a {
+    font-weight: 500;
+}
+.align-icon { vertical-align: bottom; padding-bottom:8px;
+}
+#reviews #comments > h2, #wrapper .meta, .fusion-blog-timeline-layout .fusion-timeline-date, .fusion-body .tribe-block__tickets__registration__tickets__header, .fusion-main-menu .fusion-custom-menu-item-contents, .fusion-rollover .price .amount, .post .post-content, .post-content blockquote, .project-content .project-info h4, .quantity, .quantity .minus, .quantity .plus, .quantity .qty, .review blockquote div, .search input, .sidebar .jtwt, .sidebar .widget .recentcomments, .sidebar .widget_archive li, .sidebar .widget_categories li, .sidebar .widget_layered_nav li, .sidebar .widget_links li, .sidebar .widget_meta li, .sidebar .widget_nav_menu li, .sidebar .widget_pages li, .sidebar .widget_product_categories li, .sidebar .widget_recent_entries li, .title-row, body {
+    color: #5e1172;
+}
+
+ #popmake-32539.theme-25360.pum-container,
+ #popmake-36179.theme-25360.pum-container {
+    background-color: transparent;
+    background-image: url('/wp-content/uploads/2019/12/reg-closed-sg-bg.jpg');
+    background-size: cover; 
+    background-position: center;
+ }
+ 
+ #fancybox-wrap {
+     max-width: 600px !important;
+     width: 85% !important;
+     right: 0px !important;
+     left: 0px !important;
+     margin: auto;
+}
+#fancybox-content {width: 100% !important;}
+ 
+.popmake-content .gform_wrapper {
+    max-width: 500px;
+    display: table;
+    width: 100%;
+    margin: auto;
+}
+
+.popmake-content .gform_wrapper ul li.gfield {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.popmake-content .gform_wrapper input[type="text"],
+.popmake-content .gform_wrapper input[type="email"] {
+    height: 45px !important;
+}
+
+.popmake-content .gform_wrapper input[type="submit"] {
+    background-color: #bbe9f6 !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    color: #5e1273 !important;
+    border-radius: 0px !important;
+    padding: 8px !important;
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 45px;
+    display: table;
+    margin: auto;
+}
+
+.popmake-content .gform_wrapper input[type="submit"]:hover {
+    background-color: #fff !important;
+}
+
+body.search-results #wrapper #main .fusion-post-content > h2.fusion-post-title {
+    font-size: 22px;
+}
+.fusion-post-content blockquote, .post-content blockquote {
+border-left: 4px solid
+    #65bc7b;
+        border-left-color: rgb(101, 188, 123);
+border-right: 1px solid;
+}
+#nav ul li ul li a, #reviews #comments > h2, #sticky-nav ul li ul li a, #wrapper #nav ul li ul li > a, #wrapper #sticky-nav ul li ul li > a, .avada-container h3, .comment-form input[type="submit"], .ei-title h3, .fusion-blog-shortcode .fusion-timeline-date, .fusion-image-wrapper .fusion-rollover .fusion-rollover-content .fusion-rollover-categories, .fusion-image-wrapper .fusion-rollover .fusion-rollover-content .fusion-rollover-title, .fusion-image-wrapper .fusion-rollover .fusion-rollover-content .price, .fusion-image-wrapper .fusion-rollover .fusion-rollover-content a, .fusion-load-more-button, .fusion-main-menu .sub-menu, .fusion-main-menu .sub-menu li a, .fusion-megamenu-widgets-container, .fusion-megamenu-wrapper .fusion-megamenu-submenu > a:hover, .fusion-megamenu-wrapper li .fusion-megamenu-title-disabled, .fusion-page-title-bar h3, .gform_page_footer input[type="button"], .gform_page_footer input[type="button"], .gform_wrapper .gfield_description, .gform_wrapper label, .meta .fusion-date, .more, .post-content blockquote, .review blockquote div strong, .review blockquote q, .ticket-selector-submit-btn[type="submit"], .widget.woocommerce .product-title, .woocommerce-success-message .button, body {
+    color:#5e1172 !important;
+}
+#main #respond .form-submit #comment-submit {color: #fff !important;}
+
+
+/* -----------
+    WOOCOMMERCE
+-------------- */
+.woocommerce .woocommerce-billing-fields input {
+    height: 40px !important;
+    color: #000 !important;
+    font-size: 15px !important;
+}
+
+.woocommerce .woocommerce-billing-fields input::-webkit-input-placeholder {
+    color: #aaa9a9 !important;
+    font-size: 15px !important;
+}
+
+.woocommerce .woocommerce-billing-fields .select2-selection,
+.woocommerce .woocommerce-billing-fields .select2-selection__rendered,
+.woocommerce .woocommerce-billing-fields .select2-selection__arrow {
+    height: 40px;
+    font-size: 15px;
+    padding-top: 2px;
+}
+
+.woocommerce-checkout #payment div.payment_box input.js-sv-wc-payment-gateway-credit-card-form-input[type="tel"], 
+.woocommerce-checkout #payment div.payment_box input.js-sv-wc-payment-gateway-credit-card-form-input[type="text"], 
+.woocommerce-checkout #payment div.payment_box input.js-sv-wc-payment-gateway-echeck-form-input[type="tel"], 
+.woocommerce-checkout #payment div.payment_box input.js-sv-wc-payment-gateway-echeck-form-input[type="text"], 
+.woocommerce-checkout #payment div.payment_box input.js-sv-wc-payment-gateway-form-nickname, 
+#add_payment_method input.js-sv-wc-payment-gateway-credit-card-form-input[type="tel"], 
+#add_payment_method input.js-sv-wc-payment-gateway-credit-card-form-input[type="text"], 
+#add_payment_method input.js-sv-wc-payment-gateway-echeck-form-input[type="tel"], 
+#add_payment_method input.js-sv-wc-payment-gateway-echeck-form-input[type="text"], 
+#add_payment_method input.js-sv-wc-payment-gateway-form-nickname {
+    font-size: 16px;
+    padding: 8px;
+    height: 40px;
+    color: #000;
+}
+
+.AuthorizeNetSeal {display: none;}
+#order_review .AuthorizeNetSeal {display: inline-block;}
+
+body.woocommerce-cart .woocommerce .woocommerce-message a.button.wc-forward {display: none;}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 975px) {
+    .fusion-logo {
+        float: left;
+        display: table;
+        width: 75%;
+    }
+    
+    .fusion-mobile-menu-icons {
+        width: 25%;
+        display: table;
+        float: right;
+        align-items: center;
+        padding-top: 15px;
+    }
+    
+    .fusion-mobile-menu-icons a.fusion-icon-bars {
+        display: inline-block;
+        width: 50%;
+        float: right;
+        margin-left: 0;
+    }
+    
+    .fusion-mobile-menu-icons a.fusion-icon-search {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        margin-left: 0;
+    }
+    
+    .fusion-mobile-nav-holder>ul>li.fusion-mobile-nav-item>a,
+    .fusion-mobile-nav-item a {
+        font-size: 20px;
+        padding: 4px 0 5px 0;
+    }
+    
+    .fusion-mobile-nav-holder ul.sub-menu li a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+.toxic-list-row {
+    border-top: 1px #ccc solid;
+    line-height: 24px;
+    height: 35px;
+    padding-top: 5px;
+}
+.toxic-list-col-name {
+    width: 40%;
+    float: left;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .toxic-list-row {
+        height: auto;
+        padding-bottom: 5px;
+        display: table;
+        width: 100%;
+    }
+    .toxic-list-col-name {
+        width: 100%;
+        float: none;
+    }
+    .toxic-list-col-desc {
+        width: 100%;
+    }
+}
