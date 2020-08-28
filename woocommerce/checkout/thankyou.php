@@ -18,57 +18,12 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<div class="avada-myaccount-user">
-	<div class="avada-myaccount-user-column username">
-		<?php if ( !empty( $current_user->display_name ) ) { ?>
-			<span class="hello">
-				<?php
-				printf(
-					/* translators: %1$s: Username. %2$s: Username (same as %1$s). %3$s: "Sign Out" link. */
-					esc_attr__( 'Hello %1$s (not %2$s? %3$s)', 'Avada' ),
-					'<strong>' . esc_html( $current_user->display_name ) . '</strong></span><span class="not-user">',
-					esc_html( $current_user->display_name ),
-					'<a href="' . esc_url( wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) ) ) . '">' . esc_attr__( 'Sign Out', 'Avada' ) . '</a>'
-				);
-				?>
-			</span>
-		<?php } else { ?>
-			<span class="hello"><?php esc_attr_e( 'Hello', 'Avada' ); ?></span>
-		<?php } ?>
+<div id="" class="woocommerce-order">
+	<?php
+	if ( $order ) :
 
-	</div>
-
-	<?php if ( Avada()->settings->get( 'woo_acc_msg_1' ) ) : ?>
-		<div class="avada-myaccount-user-column message">
-			<span class="msg"><?php echo Avada()->settings->get( 'woo_acc_msg_1' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span>
-		</div>
-	<?php endif; ?>
-
-	<?php if ( Avada()->settings->get( 'woo_acc_msg_2' ) ) : ?>
-		<div class="avada-myaccount-user-column message">
-			<span class="msg"><?php echo Avada()->settings->get( 'woo_acc_msg_2' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span>
-		</div>
-	<?php endif; ?>
-	<div class="avada-myaccount-user-column">
-		<span class="view-cart"><a href="<?php echo esc_url_raw( get_permalink( get_option( 'woocommerce_cart_page_id' ) ) ); ?>"><?php esc_attr_e( 'View Cart', 'Avada' ); ?></a></span>
-	</div>
-</div>
-
-<nav class="woocommerce-MyAccount-navigation">
-	<ul>
-		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
-			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
-				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
-			</li>
-		<?php endforeach; ?>
-	</ul>
-</nav>
-
-<div class="woocommerce-order woocommerce-MyAccount-content">
-
-	<?php if ( $order ) :
-
-		do_action( 'woocommerce_before_thankyou', $order->get_id() ); ?>
+		do_action( 'woocommerce_before_thankyou', $order->get_id() );
+		?>
 
 		<?php if ( $order->has_status( 'failed' ) ) : ?>
 
@@ -82,10 +37,59 @@ defined( 'ABSPATH' ) || exit;
 			</p>
 
 		<?php else : ?>
+			<?php 
+			$cch_purchase = false;
+			// echo'<pre>';print_r($order);echo'</pre>';
+			$order_items = $order->get_items();
+			$cchproducts = array( '27820', '27821', '27822', '49951', '49952' );
 
-			<h3 class="center">Thank you! Now keep your eyes on your inbox for details on how to access your purchase.</h3>
+			foreach ( $order_items as $item ) {
+				$product_id = $item['product_id'];
+				if ( in_array( $product_id, $cchproducts ) ) {
+					$cch_purchase = true;
+				}
+			}
+			?>
 
-			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received hmcaorderreceipttextone"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php if ( $cch_purchase ) : ?>
+
+				<div class="fusion-layout-column">
+					<div class="fusion-column-content-centered hmca-thankyou-column" style="">
+						<div class="fusion-column-content" style="margin-bottom: 30px">
+							<h2 class="center" style="margin-bottom: 0">Welcome to the<span class="fwb"> Certifed Crystal Practitioner<span style="font-size: 60%">™</span> </span> Course, <?php echo $order->data['billing']['first_name']; ?>!</h2>
+							<p class="center" style="margin: 60px 0 20px;">You'll receive several emails with details about your purchase and registration - but don't worry, sometimes it takes ten minutes or so for the emails to get sent out!</p>
+							<p class="center" style="margin: 0 0 20px;">If you haven't received confirmation within an hour, please <a href="/contact-me/#ContactSupport">contact us</a>. Thank you!</p>
+							<p class="center" style="margin: 0 0 60px;">Crystal Blessings,<br/><img src="https://hibiscusmooncrystalacademy.com/wp-content/uploads/2018/01/Signature.jpeg" alt="Hibiscus Moon"></p>
+							<button onclick="fireConfetti();" class="button center" style="margin: 0 auto 40px">Pop More Confetti!</button>
+						</div>
+					</div>
+				</div>
+				<div style="width: 100%; clear: both"></div>
+				<style type="text/css">
+					.hmca-thankyou-column {
+						min-height: calc(100vh - 240px);
+						margin-bottom: 60px;
+					}
+					@media only screen and (max-width: 975px) {
+						.hmca-thankyou-column {
+							min-height: calc(100vh - 170px);
+						}
+					}
+				</style>
+
+				<script src="<?php echo get_stylesheet_directory_uri() ?>/js/confetti/confetti.js?v=<?php echo time() ?>"></script>
+				<script type="text/javascript">
+					function fireConfetti() {
+						startConfetti();
+						setTimeout(function(){ stopConfetti(); }, 12000);
+					}
+					fireConfetti();
+				</script>
+
+			<?php else : ?>
+				<h3><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you! Your order has been received. ', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h3>
+				<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">Now keep your eyes on your inbox for your receipt as well as details on how to access your purchase.</p>
+			<?php endif; ?>
 
 			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
 
